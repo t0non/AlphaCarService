@@ -10,13 +10,13 @@ export default function Hero() {
 
   return (
     <section className="relative bg-white overflow-x-clip">
-      <div className="w-full bg-black flex items-center justify-center h-20 md:h-24 overflow-hidden">
+      <div className="w-full bg-black flex items-center justify-center h-16 md:h-20 overflow-hidden">
         <Image
           src={logoLocal}
           alt="Logo Alpha Car Service"
-          width={800}
-          height={240}
-          className="scale-[2.5] md:scale-[3] w-auto h-auto object-contain max-w-none"
+          width={600}
+          height={180}
+          className="scale-150 md:scale-[1.8] w-auto h-auto object-contain max-w-none"
           priority
           placeholder="blur"
         />
