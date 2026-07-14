@@ -9,9 +9,9 @@ import Script from 'next/script';
 import SchemaOrg from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
-  title: 'Alpha Car Service | Oficina Especializada em Belo Horizonte',
+  title: 'Oficina mecânica em Belo Horizonte',
   description:
-    'Diagnóstico preciso e preço justo. Atendimento dedicado e com garantia em um só lugar.',
+    'Oficina mecânica em Belo Horizonte. Diagnóstico preciso e preço justo. Atendimento dedicado e com garantia em um só lugar.',
   icons: {
     icon: logoIcon.src,
     shortcut: logoIcon.src,
