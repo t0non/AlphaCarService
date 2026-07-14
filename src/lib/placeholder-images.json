@@ -1,0 +1,64 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Três carros Chevrolet em exibição.",
+      "imageUrl": "https://files.catbox.moe/1u71s9.png",
+      "imageHint": "three cars"
+    },
+    {
+      "id": "alpha-logo",
+      "description": "Logo da Alpha Car Service",
+      "imageUrl": "https://files.catbox.moe/du52ck.png",
+      "imageHint": "car service logo"
+    },
+    {
+      "id": "map-placeholder",
+      "description": "A placeholder image for a map showing a location.",
+      "imageUrl": "https://images.unsplash.com/photo-1446776899648-aa78eefe8ed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjaXR5JTIwbWFwfGVufDB8fHx8MTc3MTM0Nzc1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city map"
+    },
+    {
+      "id": "services-car",
+      "description": "A red sports car for the services section.",
+      "imageUrl": "https://files.catbox.moe/6s8zs6.jpg",
+      "imageHint": "red car"
+    },
+    {
+      "id": "services-car-cutout",
+      "description": "Top-down view of a white car with a transparent background.",
+      "imageUrl": "https://files.catbox.moe/y99uz3.png",
+      "imageHint": "white car top view"
+    },
+    {
+      "id": "testimonial-1-avatar",
+      "description": "Avatar de um homem.",
+      "imageUrl": "https://images.unsplash.com/photo-1636377985931-898218afd306?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzEzODIxMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "testimonial-2-avatar",
+      "description": "Avatar de uma mulher.",
+      "imageUrl": "https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MTQyNzc1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial-3-avatar",
+      "description": "Avatar de um homem.",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzEzODIxMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "clean-workshop-bg",
+      "description": "Close-up de um motor de carro.",
+      "imageUrl": "https://files.catbox.moe/8rx7s8.png",
+      "imageHint": "car engine"
+    },
+    {
+      "id": "revisao-manutencao-bg",
+      "description": "Close-up da roda de um carro esportivo.",
+      "imageUrl": "https://files.catbox.moe/yftmer.png",
+      "imageHint": "car wheel"
+    }
+  ]
+}
