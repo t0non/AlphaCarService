@@ -6,6 +6,7 @@ import AnimationProvider from '@/components/animation-provider';
 import { WhatsAppWidget } from '@/components/whatsapp-widget';
 import logoIcon from '@/Imagens/logo(2).png';
 import Script from 'next/script';
+import SchemaOrg from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Alpha Car Service | Oficina Especializada em Belo Horizonte',
@@ -26,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className="scroll-smooth">
       <head>
+        <SchemaOrg />
         {/* Google tag (gtag.js) */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-H7JP3V2DPJ" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
