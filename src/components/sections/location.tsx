@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import logoLocal from '@/Imagens/logo (2).webp';
+import logoLocal from '@/Imagens/logo(2).png';
 
 export default function Location() {
     return (

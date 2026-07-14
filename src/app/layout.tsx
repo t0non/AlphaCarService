@@ -4,7 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import AnimationProvider from '@/components/animation-provider';
 import { WhatsAppWidget } from '@/components/whatsapp-widget';
-import logoIcon from '@/Imagens/logo (2).webp';
+import logoIcon from '@/Imagens/logo(2).png';
 import Script from 'next/script';
 
 export const metadata: Metadata = {

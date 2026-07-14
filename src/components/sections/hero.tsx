@@ -4,19 +4,19 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { GoogleIcon } from '@/components/icons/google-icon';
 import heroBackground from '@/Imagens/Carros com sombra.webp';
-import logoLocal from '@/Imagens/logo (2).webp';
+import logoLocal from '@/Imagens/logo(2).png';
 
 export default function Hero() {
 
   return (
     <section className="relative bg-white overflow-x-clip">
-      <div className="w-full bg-black flex items-center justify-center h-16 md:h-20 overflow-hidden">
+      <div className="w-full bg-black flex items-center justify-center py-4 md:py-6">
         <Image
           src={logoLocal}
           alt="Logo Alpha Car Service"
-          width={600}
-          height={180}
-          className="scale-150 md:scale-[1.8] w-auto h-auto object-contain max-w-none"
+          width={400}
+          height={120}
+          className="h-12 md:h-16 w-auto object-contain"
           priority
           placeholder="blur"
         />
