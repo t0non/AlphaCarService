@@ -14,8 +14,9 @@ export default function Hero() {
         <Image
           src={logoLocal}
           alt="Logo Alpha Car Service"
-          width={128}
-          height={128}
+          width={400}
+          height={120}
+          className="h-14 md:h-20 w-auto object-contain"
           priority
           placeholder="blur"
         />
