@@ -10,7 +10,7 @@ const testimonials = [
   {
     name: 'Frederico Farjado',
     review:
-      'Estou extremamente satisfeito com o serviço prestado pela Alpha Car. Desde o primeiro contato, senti confiança na equipe. Eles demonstraram um zelo incrível pelo meu veículo, dedicando tempo para explicar cada etapa do processo. Seu conhecimento técnico é impressionante, e isso se refletiu na execução impecável do serviço. Estou genuinamente entusiasmado com a qualidade do trabalho realizado pela Alpha Car Service. Recomendo a todos que buscam um serviço confiável e profissional." Recomendo.',
+      'Estou extremamente satisfeito com o serviço prestado pela Alpha Car. Desde o primeiro contato, senti confiança na equipe. Eles demonstraram um zelo incrível pelo meu veículo, dedicando tempo para explicar cada etapa do processo. Seu conhecimento técnico é impressionante, e isso se refletiu na execução impecável do serviço. Estou genuinamente entusiasmado com a qualidade do trabalho realizado pela Alpha Car Service. Recomendo.',
     rating: 5,
   },
   {
@@ -56,8 +56,6 @@ export default function SocialProof() {
     if (names.length === 1) return names[0].charAt(0).toUpperCase();
     return `${names[0].charAt(0)}${names[names.length - 1].charAt(0)}`.toUpperCase();
   };
-  
-  const duplicatedTestimonials = [...testimonials, ...testimonials];
 
   const avatarColors = [
     'bg-red-500',
@@ -79,42 +77,44 @@ export default function SocialProof() {
         </div>
       </div>
 
-      <div className="mt-16 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] animate-up">
-        <ul className="flex items-stretch justify-center md:justify-start [&_li]:mx-4 animate-scroll hover:[animation-play-state:paused]">
-          {duplicatedTestimonials.map((testimonial, index) => (
-            <li key={index} className="flex">
-              <Card className="elevated-card bg-secondary text-secondary-foreground rounded-xl shadow-lg w-80 flex-shrink-0 flex flex-col border border-transparent">
-                <CardContent className="p-6 flex flex-col h-full">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center gap-3">
-                      <Avatar className="h-10 w-10">
-                        <AvatarFallback className={`${avatarColors[index % avatarColors.length]} text-white font-bold`}>
-                          {getInitials(testimonial.name)}
-                        </AvatarFallback>
-                      </Avatar>
-                      <div className="flex items-center gap-1.5">
-                          <p className="font-semibold text-foreground">{testimonial.name}</p>
-                          <CheckCircle className="h-4 w-4 text-foreground" />
+      <div className="mt-16 w-full animate-up">
+        <div className="container mx-auto px-4">
+          <ul className="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar gap-6 pb-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:overflow-visible">
+            {testimonials.map((testimonial, index) => (
+              <li key={index} className="flex snap-center min-w-[300px] md:min-w-0">
+                <Card className="elevated-card bg-secondary text-secondary-foreground rounded-xl shadow-lg w-full flex-shrink-0 flex flex-col border border-transparent">
+                  <CardContent className="p-6 flex flex-col h-full">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center gap-3">
+                        <Avatar className="h-10 w-10">
+                          <AvatarFallback className={`${avatarColors[index % avatarColors.length]} text-white font-bold`}>
+                            {getInitials(testimonial.name)}
+                          </AvatarFallback>
+                        </Avatar>
+                        <div className="flex items-center gap-1.5">
+                            <p className="font-semibold text-foreground">{testimonial.name}</p>
+                            <CheckCircle className="h-4 w-4 text-foreground" />
+                        </div>
                       </div>
+                      <GoogleIcon className="h-6 w-6" />
                     </div>
-                    <GoogleIcon className="h-6 w-6" />
-                  </div>
-                  <div className="flex mb-2">
-                    {Array(testimonial.rating).fill(0).map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
-                    ))}
-                  </div>
-                  <blockquote className="text-muted-foreground leading-relaxed text-sm line-clamp-6">
-                    "{testimonial.review}"
-                  </blockquote>
-                </CardContent>
-              </Card>
-            </li>
-          ))}
-        </ul>
+                    <div className="flex mb-2">
+                      {Array(testimonial.rating).fill(0).map((_, i) => (
+                        <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
+                      ))}
+                    </div>
+                    <blockquote className="text-muted-foreground leading-relaxed text-sm line-clamp-6">
+                      "{testimonial.review}"
+                    </blockquote>
+                  </CardContent>
+                </Card>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
-      <div className="container mx-auto px-6 lg:px-8 mt-16 flex flex-col sm:flex-row items-center justify-center gap-4 animate-up">
+      <div className="container mx-auto px-6 lg:px-8 mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 animate-up">
         <Button
           size="lg"
           variant="default"
@@ -132,7 +132,7 @@ export default function SocialProof() {
           asChild
         >
           <a href="tel:+5531998935665">
-            Ligue agora
+            Ligar para a oficina
           </a>
         </Button>
       </div>

@@ -25,33 +25,33 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 items-center">
           {/* Left Side (Content) */}
           <div className="relative flex flex-col justify-center text-center lg:text-left items-center lg:items-start z-10 pt-16 pb-12 sm:pb-24 animate-up">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
-              Oficina mecânica de<br />confiança em Belo Horizonte
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground leading-tight">
+              Oficina mecânica em Belo Horizonte com diagnóstico preciso e serviço sem surpresa
             </h1>
-            <p className="mt-3 text-lg text-muted-foreground max-w-md mx-auto lg:mx-0">
-              Serviços com garantia em um só lugar. Atendimento dedicado. Seu carro entregue no menor tempo possível, com segurança.
+            <p className="mt-4 text-lg text-muted-foreground max-w-lg mx-auto lg:mx-0">
+              Revisão, freios, suspensão, injeção eletrônica, elétrica e diagnóstico automotivo no bairro Saudade. Você entende o problema e aprova o serviço antes de qualquer reparo.
             </p>
-            <div className="mt-8 flex flex-row gap-4 justify-center lg:justify-start w-full max-w-sm mx-auto sm:max-w-none">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start w-full max-w-sm mx-auto sm:max-w-none">
               <Button
                 size="lg"
                 asChild
-                className="soft-button bg-primary hover:bg-primary/90 text-primary-foreground rounded-md h-24 px-8 text-lg font-bold flex-1"
+                className="soft-button bg-primary hover:bg-primary/90 text-primary-foreground rounded-md h-16 sm:h-20 px-6 sm:px-8 text-base sm:text-lg font-bold flex-1"
               >
                 <a
-                  href="https://wa.me/5531998935665?text=Olá,%20vi%20o%20site%20da%20Alpha%20Car%20Service%20e%20gostaria%20de%20um%20orçamento."
+                  href="https://wa.me/5531998935665?text=Olá!%20Encontrei%20a%20Alpha%20Car%20Service%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  WhatsApp
+                  Solicitar orçamento pelo WhatsApp
                 </a>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 asChild
-                className="soft-button h-24 px-8 text-lg font-bold rounded-md border-2 border-primary text-primary hover:bg-primary/10 flex-1"
+                className="soft-button h-16 sm:h-20 px-6 sm:px-8 text-base sm:text-lg font-bold rounded-md border-2 border-primary text-primary hover:bg-primary/10 flex-1"
               >
-                <a href="tel:+5531998935665">Ligue agora</a>
+                <a href="tel:+5531998935665">Ligar para a oficina</a>
               </Button>
             </div>
             <div className="mt-10 flex items-center justify-center lg:justify-start gap-4 max-w-md mx-auto lg:mx-0 w-full">
