@@ -31,27 +31,31 @@ export default function Hero() {
             <p className="mt-4 text-lg text-muted-foreground max-w-lg mx-auto lg:mx-0">
               Revisão, freios, suspensão, injeção eletrônica, elétrica e diagnóstico automotivo no bairro Saudade. Você entende o problema e aprova o serviço antes de qualquer reparo.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start w-full max-w-sm mx-auto sm:max-w-none">
+            <div className="mt-8 flex flex-col gap-4 justify-center w-full max-w-sm mx-auto sm:max-w-none sm:flex-row sm:justify-start">
               <Button
-                size="lg"
                 asChild
-                className="soft-button bg-primary hover:bg-primary/90 text-primary-foreground rounded-md h-20 sm:h-24 px-6 sm:px-8 text-base sm:text-lg font-bold flex-1"
+                className="soft-button bg-primary hover:bg-primary/90 text-primary-foreground rounded-md h-16 px-6 text-base font-bold w-full sm:w-auto sm:h-16 sm:px-10"
               >
                 <a
                   href="https://wa.me/5531998935665?text=Olá!%20Encontrei%20a%20Alpha%20Car%20Service%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento."
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="flex items-center justify-center w-full h-full"
                 >
                   Solicitar orçamento pelo WhatsApp
                 </a>
               </Button>
               <Button
-                size="lg"
                 variant="outline"
                 asChild
-                className="soft-button h-20 sm:h-24 px-6 sm:px-8 text-base sm:text-lg font-bold rounded-md border-2 border-primary text-primary hover:bg-primary/10 flex-1"
+                className="soft-button rounded-md border-2 border-primary text-primary hover:bg-primary/10 h-16 px-6 text-base font-bold w-full sm:w-auto sm:h-16 sm:px-10"
               >
-                <a href="tel:+5531998935665">Ligar para a oficina</a>
+                <a 
+                  href="tel:+5531998935665"
+                  className="flex items-center justify-center w-full h-full"
+                >
+                  Ligar para a oficina
+                </a>
               </Button>
             </div>
             <div className="mt-10 flex items-center justify-center lg:justify-start gap-4 max-w-md mx-auto lg:mx-0 w-full">
