@@ -13,7 +13,7 @@ export default function ServicePage() {
       <main className="flex-1 bg-white pt-24 pb-16">
         <div className="container mx-auto px-6 lg:px-8 max-w-4xl">
           <nav className="text-sm text-muted-foreground mb-6">
-            <a href="/" className="hover:underline">Home</a> &gt; <a href="/servicos" className="hover:underline">Serviços</a> &gt; <span className="text-foreground">{p.h1}</span>
+            <a href="/" className="hover:underline">Home</a> &gt; <a href="/servicos" className="hover:underline">Serviços</a> &gt; <span className="text-foreground">Higienização e Filtro de Ar-Condicionado</span>
           </nav>
           
           <h1 className="text-4xl font-bold tracking-tight text-foreground mb-8">
