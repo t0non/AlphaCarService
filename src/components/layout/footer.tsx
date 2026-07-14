@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import tmLogo from '@/Imagens/topmarketinglogo.jfif';
+import tmLogo from '@/Imagens/topmarketinglogo.jpg';
 
 export default function Footer() {
   return (
