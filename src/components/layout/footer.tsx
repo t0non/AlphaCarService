@@ -1,21 +1,31 @@
+import Image from 'next/image';
+import tmLogo from '@/Imagens/topmarketinglogo.jfif';
+
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 text-white border-t border-gray-800">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-6 py-6 animate-up sm:flex-row">
-        <p className="text-sm text-white/60 text-center sm:text-left">
+        <p className="text-sm text-gray-400 text-center sm:text-left">
           &copy; {new Date().getFullYear()} Alpha Car Service. Todos os direitos reservados.
         </p>
-        <p className="text-sm text-white/60 text-center sm:text-right">
-          Feito com <span className="text-red-500">♥</span> por{' '}
+        <div className="flex items-center gap-2 text-sm text-gray-400">
+          <span>Desenvolvido por</span>
           <a
             href="https://topmarketingbh.com.br/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-white hover:underline"
+            className="flex items-center gap-2 hover:opacity-80 transition-opacity ml-1"
           >
-            TOP MARKETING BH
+            <Image 
+              src={tmLogo} 
+              alt="Logo Top Marketing BH" 
+              width={24} 
+              height={24} 
+              className="rounded-sm object-cover"
+            />
+            <span className="font-bold text-amber-500 tracking-wide">Top Marketing BH</span>
           </a>
-        </p>
+        </div>
       </div>
     </footer>
   );
